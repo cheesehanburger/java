@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--name可以为bean定义别名，多个别名使用空格隔开-->
+    <bean id="bookService" name="service serviceEbi bookEbi" class="com.itheima.service.impl.BookServiceImpl">
+        <property name="bookDao" ref="bookDao"/>
+    </bean>
+    <!--scope就是定义bean是否为单例，默认singleton是单例，prototype是非单例-->
+    <bean id="bookDao" name="dao" class="com.itheima.dao.impl.BookDaoImpl"/>
+</beans>

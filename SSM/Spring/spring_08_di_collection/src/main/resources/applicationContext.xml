@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl">
+        <!--数组注入-->
+       <property name="array">
+           <array>
+               <value>1000</value>
+               <value>2000</value>
+               <value>3000</value>
+               <value>4000</value>
+           </array>
+       </property>
+        <!--list集合注入-->
+        <property name="list">
+            <list>
+                <value>itcast</value>
+                <value>itheima</value>
+                <value>itlaohan</value>
+            </list>
+        </property>
+        <!--set集合注入-->
+        <property name="set">
+            <set>
+                <value>itcast</value>
+                <value>itheima</value>
+                <value>itcast</value>
+            </set>
+        </property>
+        <!--map集合注入-->
+        <property name="map">
+            <map>
+                <entry key="country" value="china"/>
+                <entry key="province" value="jiangsu"/>
+                <entry key="city" value="nanjing"/>
+            </map>
+        </property>
+        <!--Properties注入-->
+        <property name="properties">
+            <props>
+                <prop key="country">china</prop>
+                <prop key="province">jiangsu</prop>
+                <prop key="city">nanjing</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--名称空间 namespace-->
+<mapper namespace="com.itheima.mapper.UserMapper">
+    <!--在映射配置文件中的 resultType 属性需要配置数据封装的类型（类的全限定名）。Mybatis提供了类型别名 (typeAliases) 可以简化这部分的书写。-->
+    <!--每一条sql一般称之为statement-->
+    <select id="selectAll" resultType="user">
+        select * from tb_user;
+    </select>
+    <!--<select id="selectById" resultType="user">-->
+    <!--    select * from tb_user where id = #{id};-->
+    <!--</select>-->
+
+</mapper>
