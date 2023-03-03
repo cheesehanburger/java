@@ -10,7 +10,7 @@ public class App {
     public static void main(String[] args) {
         //两种容器的创建方式
         //1.加载类路径下的配置文件(常用)
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml"); //已经开始加载bean
         //2.从文件系统下加载配置文件(了解即可)
         //ApplicationContext ctx = new FileSystemXmlApplicationContext("/Users/kaiyuan/Documents/projects/java/SSM/Spring/spring_10_container/applicationContext.xml");
 

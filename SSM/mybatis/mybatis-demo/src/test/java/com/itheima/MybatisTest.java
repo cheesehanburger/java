@@ -160,10 +160,10 @@ public class MybatisTest {
         // 3.获取mapper接口的代理对象
         BrandMapper brandMapper = sqlSession.getMapper(BrandMapper.class);
         //4.执行sql语句
-        brandMapper.add(brand);
+        int count = brandMapper.add(brand);
+        System.out.println(count);
         //开启主键返回后，可以获取主键
         Integer key = brand.getId();
-        System.out.println(key);
         //提交事物
         sqlSession.commit();
 
@@ -229,7 +229,8 @@ public class MybatisTest {
         BrandMapper brandMapper = sqlSession.getMapper(BrandMapper.class);
         //4.执行sql语句
 
-        brandMapper.deleteByIds(ids);
+        int count = brandMapper.deleteByIds(ids);
+        System.out.println(count);
         //提交事物
         sqlSession.commit();
 

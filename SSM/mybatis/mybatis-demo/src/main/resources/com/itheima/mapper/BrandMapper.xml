@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
+<!--namespace:名称空间。必须是对应接口的全限定名 -->
 <mapper namespace="com.itheima.mapper.BrandMapper">
     <!--如果数据库表字段的名称和实体类的属性名称不一致，会出现不能自动封装的问题,可以"给字段起别名"解决-->
     <!--1.使用sql片段（不灵活）-->

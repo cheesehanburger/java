@@ -7,7 +7,6 @@
     <bean id="bookService" name="service serviceEbi bookEbi" class="com.itheima.service.impl.BookServiceImpl">
         <property name="bookDao" ref="bookDao"/>
     </bean>
-
-
+    <!--scope就是定义bean是否为单例，默认singleton是单例，prototype是非单例-->
     <bean id="bookDao" name="dao" class="com.itheima.dao.impl.BookDaoImpl"/>
 </beans>

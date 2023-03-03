@@ -35,14 +35,14 @@ public interface BrandMapper {
     List<Brand> selectByConditionSingle(Brand brand);
 
     //TODO 添加数据
-    void add(Brand brand);
+    int add(Brand brand);
 
     //TODO 修改数据
     int update(Brand brand);
 
     //TODO 删除数据（单条）
-    void deleteById(int id);
+    int deleteById(int id);
 
     //TODO  批量删除
-    void deleteByIds(@Param("ids") int[] ids);
+    int deleteByIds(@Param("ids") int[] ids);
 }

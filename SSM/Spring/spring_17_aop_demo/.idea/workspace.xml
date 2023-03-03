@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5249dfa3-84c2-43b1-ba35-1ec56d93a290" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../spring_02_base_config/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/libraries/Maven__com_alibaba_druid_1_1_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/libraries/Maven__org_mybatis_mybatis_3_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/libraries/Maven__org_springframework_spring_aop_5_2_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/libraries/Maven__org_springframework_spring_beans_5_2_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/libraries/Maven__org_springframework_spring_context_5_2_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/libraries/Maven__org_springframework_spring_core_5_2_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/libraries/Maven__org_springframework_spring_expression_5_2_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/libraries/Maven__org_springframework_spring_tx_5_2_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_16_spring_junit/spring_16_spring_junit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_18_aop_quickstart/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_18_aop_quickstart/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_18_aop_quickstart/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_18_aop_quickstart/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_18_aop_quickstart/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_18_aop_quickstart/spring_18_aop_quickstart.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_18_aop_quickstart/src/main/java/com/itheima/aop/MyDevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_19_aop_pointcut/spring_19_aop_pointcut.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_20_aop_advice_type/spring_20_aop_advice_type.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_21_case_interface_run_speed/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_21_case_interface_run_speed/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_21_case_interface_run_speed/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_21_case_interface_run_speed/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_21_case_interface_run_speed/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_21_case_interface_run_speed/spring_21_case_interface_run_speed.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_22_aop_advice_data/spring_22_aop_advice_data.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_23_case_handle_password/spring_23_case_handle_password.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_01_quickstart/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_01_quickstart/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_02_base_config/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_02_base_config/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_03_bean_instance/target/classes/com/itheima/factory/UserDaoFactoryBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_03_bean_instance/target/classes/com/itheima/factory/UserDaoFactoryBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_04_bean_lifecycle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_04_bean_lifecycle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_10_container/src/main/java/com/itheima/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_10_container/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_10_container/src/main/java/com/itheima/AppForBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_10_container/src/main/java/com/itheima/AppForBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_10_container/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_10_container/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_10_container/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_10_container/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_10_container/target/classes/com/itheima/AppForBeanFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_10_container/target/classes/com/itheima/AppForBeanFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/spring_15_spring_mybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/spring_15_spring_mybatis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/src/main/java/App2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/src/main/java/App2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/src/main/java/com/itheima/config/JdbcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/src/main/java/com/itheima/config/JdbcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/src/main/java/com/itheima/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/src/main/java/com/itheima/config/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/src/main/java/com/itheima/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/src/main/java/com/itheima/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/target/classes/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/target/classes/SqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_15_spring_mybatis/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_15_spring_mybatis/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis/mybatis-demo/src/main/java/com/itheima/MybatisDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis/mybatis-demo/src/main/java/com/itheima/MybatisDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mybatis/mybatis-demo/target/classes/com/itheima/MybatisDemo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../mybatis/mybatis-demo/target/classes/com/itheima/MybatisDemo2.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/Library/Maven/apache-maven-3.6.1" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="/Library/Maven/apache-maven-3.6.1/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2M1tt6q6M8OtazSMWgOlWfbTDhj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.App" />
+      <module name="spring_17_aop_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5249dfa3-84c2-43b1-ba35-1ec56d93a290" name="Changes" comment="" />
+      <created>1676947129396</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676947129396</updated>
+      <workItem from="1676947131135" duration="1770000" />
+      <workItem from="1677039386781" duration="76000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

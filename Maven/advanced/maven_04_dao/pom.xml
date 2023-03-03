@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.itheima</groupId>
+    <artifactId>maven_04_dao</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--配置当前工程继承自parent工程-->
+    <parent>
+        <groupId>com.itheima</groupId>
+        <artifactId>maven_01_parent</artifactId>
+        <version>1.0-RELEASE</version>
+        <!--设置父项目pom.xml位置路径-->
+        <relativePath>../maven_01_parent/pom.xml</relativePath>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.itheima</groupId>
+            <artifactId>maven_03_pojo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <!--可选依赖:是隐藏当前工程所依赖的资源，隐藏后对应资源将不具有依赖传递-->
+            <!--默认是false-->
+            <optional>false</optional>
+        </dependency>
+
+
+        <!--子项目引入父项目dependencyManagement中的依赖-->
+        <dependency>
+            <!--无需版本号-->
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>

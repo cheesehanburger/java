@@ -24,9 +24,9 @@ public class MybatisDemo2 {
 
         // 3.获取Usermapper接口的代理对象
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-        User user = userMapper.selectById(3);
+        User user = userMapper.selectById(2);
         System.out.println(user);
-    //    4.释放资源
+        //4.释放资源
         sqlSession.close();
     }
 }

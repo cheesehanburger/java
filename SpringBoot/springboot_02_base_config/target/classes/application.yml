@@ -1,0 +1,9 @@
+# 常用这种配置方式
+# 优先级： properties>yaml>yml
+server:
+  port: 81
+
+#默认日志级别是info
+logging:
+  level:
+   root: info

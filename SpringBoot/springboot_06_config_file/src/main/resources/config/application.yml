@@ -1,0 +1,4 @@
+#config目录里的配置文件优先级比外面高
+server:
+  port: 81
+
