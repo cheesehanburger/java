@@ -146,9 +146,11 @@
         </resources>
         <plugins>
             <plugin>
+                <!--maven 测试插件-->
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.12.4</version>
                 <configuration>
+                    <!--设置ture是直接跳过所有测试-->
                     <skipTests>false</skipTests>
                     <!--设置参与测试的内容-->
                     <!--<includes>-->
@@ -166,12 +168,12 @@
     <!--配置当前工程保存在私服的具体位置-->
     <distributionManagement>
         <repository>
-            <id>itheima-release</id>
-            <url>http://127.0.0.1:8081/repository/itheima-release/</url>
+            <id>hanburger-release</id>
+            <url>http://127.0.0.1:8081/repository/hanburger-release/</url>
         </repository>
         <snapshotRepository>
-            <id>itheima-snapshot</id>
-            <url>http://127.0.0.1:8081/repository/itheima-snapshot/</url>
+            <id>hanburger-snapshot</id>
+            <url>http://127.0.0.1:8081/repository/hanburger-snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
