@@ -1,6 +1,6 @@
-package com.topath.dao;
+package com.itheima.dao;
 
-import com.topath.domain.User;
+import com.itheima.domain.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author kaiyuan
- * @since 2023-03-06
+ * @since 2023-03-15
  */
 public interface UserDao extends BaseMapper<User> {
 

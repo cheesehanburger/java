@@ -1,8 +1,8 @@
-package com.topath.controller;
+package com.itheima.controller;
 
 
-import com.topath.domain.User;
-import com.topath.service.IUserService;
+import com.itheima.dao.UserDao;
+import com.itheima.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,19 +17,16 @@ import java.util.List;
  * </p>
  *
  * @author kaiyuan
- * @since 2023-03-06
+ * @since 2023-03-15
  */
 @RestController
 @RequestMapping("/user")
 public class UserController {
-
     @Autowired
-    IUserService userService;
-
-    @GetMapping
-    public User getAll() {
-        User user = userService.getById(2);
-        return user;
+    private UserDao userDao;
+    @GetMapping("/get")
+    public List<User> getAll() {
+        return userDao.selectList(null);
     }
 }
 

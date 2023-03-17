@@ -12,5 +12,6 @@ public class App {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
         BookService bookService = ctx.getBean(BookService.class);
         bookService.save();
+
     }
 }

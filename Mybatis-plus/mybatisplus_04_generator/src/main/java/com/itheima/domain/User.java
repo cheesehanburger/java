@@ -1,4 +1,4 @@
-package com.topath.domain;
+package com.itheima.domain;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -15,7 +15,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author kaiyuan
- * @since 2023-03-06
+ * @since 2023-03-15
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

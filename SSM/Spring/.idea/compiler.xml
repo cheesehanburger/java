@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring_01_quickstart" />
         <module name="spring_02_base_config" />
+        <module name="spring_11_annotation_bean" />
+        <module name="spring_13_annotation_di" />
+        <module name="spring_01_quickstart" />
         <module name="spring_05_di_set" />
         <module name="spring_03_bean_instance" />
         <module name="spring_04_bean_lifecycle" />
@@ -19,6 +21,8 @@
       <module name="spring_03_bean_instance" target="1.5" />
       <module name="spring_04_bean_lifecycle" target="1.5" />
       <module name="spring_05_di_set" target="1.5" />
+      <module name="spring_11_annotation_bean" target="1.5" />
+      <module name="spring_13_annotation_di" target="1.5" />
       <module name="untitled" target="8" />
     </bytecodeTargetLevel>
   </component>

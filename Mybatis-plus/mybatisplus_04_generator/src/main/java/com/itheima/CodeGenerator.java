@@ -32,7 +32,7 @@ public class CodeGenerator {
 
         //设置包名相关配置
         PackageConfig packageInfo = new PackageConfig();
-        packageInfo.setParent("com.topath");   //设置生成的包名，与代码所在位置不冲突，二者叠加组成完整路径
+        packageInfo.setParent("com.itheima");   //设置生成的包名，与代码所在位置不冲突，二者叠加组成完整路径
         packageInfo.setEntity("domain");    //设置实体类包名
         packageInfo.setMapper("dao");   //设置数据层包名
         autoGenerator.setPackageInfo(packageInfo);

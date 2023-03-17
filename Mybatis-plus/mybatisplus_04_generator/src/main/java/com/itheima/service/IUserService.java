@@ -1,6 +1,6 @@
-package com.topath.service;
+package com.itheima.service;
 
-import com.topath.domain.User;
+import com.itheima.domain.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author kaiyuan
- * @since 2023-03-06
+ * @since 2023-03-15
  */
 public interface IUserService extends IService<User> {
 
