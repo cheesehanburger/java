@@ -17,6 +17,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 //拦截器配置方式二
 //实现WebMvcConfigurer接口可以简化开发（类似于代替SpringMvcSupport），但具有一定的侵入性
 public class SpringMvcConfig implements WebMvcConfigurer {
+    //注入拦截器
     @Autowired
     private ProjectInterceptor projectInterceptor;
     @Autowired
@@ -24,7 +25,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
     @Autowired
     private ProjectInterceptor3 projectInterceptor3;
 
-    //拦截器
+    //添加拦截器
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         //配置拦截目录，使用registry对象配置

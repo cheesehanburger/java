@@ -6,13 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring_18_aop_quickstart" />
         <module name="spring_02_base_config" />
+        <module name="spring_19_aop_pointcut" />
+        <module name="spring_21_case_interface_run_speed" />
         <module name="spring_11_annotation_bean" />
         <module name="spring_13_annotation_di" />
         <module name="spring_01_quickstart" />
         <module name="spring_05_di_set" />
         <module name="spring_03_bean_instance" />
         <module name="spring_04_bean_lifecycle" />
+        <module name="spring_20_aop_advice_type" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +27,10 @@
       <module name="spring_05_di_set" target="1.5" />
       <module name="spring_11_annotation_bean" target="1.5" />
       <module name="spring_13_annotation_di" target="1.5" />
+      <module name="spring_18_aop_quickstart" target="1.5" />
+      <module name="spring_19_aop_pointcut" target="1.5" />
+      <module name="spring_20_aop_advice_type" target="1.5" />
+      <module name="spring_21_case_interface_run_speed" target="1.5" />
       <module name="untitled" target="8" />
     </bytecodeTargetLevel>
   </component>

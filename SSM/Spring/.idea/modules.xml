@@ -9,6 +9,10 @@
       <module fileurl="file://$PROJECT_DIR$/spring_05_di_set/spring_05_di_set.iml" filepath="$PROJECT_DIR$/spring_05_di_set/spring_05_di_set.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_11_annotation_bean/spring_11_annotation_bean.iml" filepath="$PROJECT_DIR$/spring_11_annotation_bean/spring_11_annotation_bean.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_13_annotation_di/spring_13_annotation_di.iml" filepath="$PROJECT_DIR$/spring_13_annotation_di/spring_13_annotation_di.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_18_aop_quickstart/spring_18_aop_quickstart.iml" filepath="$PROJECT_DIR$/spring_18_aop_quickstart/spring_18_aop_quickstart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_19_aop_pointcut/spring_19_aop_pointcut.iml" filepath="$PROJECT_DIR$/spring_19_aop_pointcut/spring_19_aop_pointcut.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_20_aop_advice_type/spring_20_aop_advice_type.iml" filepath="$PROJECT_DIR$/spring_20_aop_advice_type/spring_20_aop_advice_type.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_21_case_interface_run_speed/spring_21_case_interface_run_speed.iml" filepath="$PROJECT_DIR$/spring_21_case_interface_run_speed/spring_21_case_interface_run_speed.iml" />
     </modules>
   </component>
 </project>
