@@ -1,5 +1,6 @@
 package com.itheima.service.impl;
 
+import com.itheima.annotation.AuthCheck;
 import com.itheima.dao.BookDao;
 import com.itheima.dao.impl.BookDaoImpl;
 import com.itheima.service.BookService;
@@ -14,6 +15,7 @@ public class BookServiceImpl implements BookService {
         bookDao.save();
     }
 
+    @AuthCheck()
     public void update() {
         bookDao.update();
     }
