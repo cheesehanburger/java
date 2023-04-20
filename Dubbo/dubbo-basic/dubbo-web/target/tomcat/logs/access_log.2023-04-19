@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [19/Apr/2023:14:13:24 +0800] "GET /user/sayHello.do HTTP/1.1" 200 19 http-bio-8000-exec-2 3092
+0:0:0:0:0:0:0:1 - - [19/Apr/2023:14:13:33 +0800] "GET /user/find.do?id=1 HTTP/1.1" 404 949 http-bio-8000-exec-3 21
