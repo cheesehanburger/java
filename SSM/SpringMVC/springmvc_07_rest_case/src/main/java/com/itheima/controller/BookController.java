@@ -11,11 +11,13 @@ import java.util.List;
 public class BookController {
 
     //保存的功能
-    @PostMapping
-    public String saveBooks(@RequestBody Book book) {
+    @PostMapping("post")
+    public Book saveBooks(@RequestBody Book book) {
+        System.out.println(book.getDate());
         System.out.println("新书籍存入成功" + book);
-        return "save successful";
+        return book;
     }
+
     //获取的功能
     @GetMapping
     public List<Book> getBooks() {

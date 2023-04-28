@@ -116,9 +116,19 @@ public class ProducerTest {
                 return message;
             }
         };
+        //消息单独过期
+        //rabbitTemplate.convertAndSend("test_exchange_ttl", "ttl.hehe", "message ttl....",messagePostProcessor);
+
         for (int i = 0; i < 10; i++) {
-            // 发送定时消息
-            rabbitTemplate.convertAndSend("test_exchange_ttl", "ttl.hello", "hello ttl", messagePostProcessor);
+            if(i == 5){
+                //消息单独过期（由于不在队顶，所以最终并不会单独过期，而是和队列一同过期）
+                rabbitTemplate.convertAndSend("test_exchange_ttl", "ttl.hehe", "message ttl....",messagePostProcessor);
+            }else{
+                //不过期的消息
+                rabbitTemplate.convertAndSend("test_exchange_ttl", "ttl.hehe", "message ttl....");
+
+            }
+
         }
     }
 
@@ -128,9 +138,21 @@ public class ProducerTest {
         //测试过期导致的死信
         //rabbitTemplate.convertAndSend("test_exchange_dlx", "test.tlx.hello", "我是一条消息，我会成为死信吗");
         //测试超出队列导致的死信
-        for (int i = 0; i < 20; i++) {
-            rabbitTemplate.convertAndSend("test_exchange_dlx", "test.tlx.hello", "我是一条消息，我会成为死信吗");
-        }
+        //for (int i = 0; i < 20; i++) {
+        //    rabbitTemplate.convertAndSend("test_exchange_dlx", "test.tlx.hello", "我是一条消息，我会成为死信吗");
+        //}
+
+        //测试消息拒收导致的死信
+        rabbitTemplate.convertAndSend("test_exchange_dlx", "test.tlx.hello", "我是一条消息，我会成为死信吗");
     }
 
+    @Test
+    public void testDelay() throws InterruptedException {
+        rabbitTemplate.convertAndSend("order_exchange","order.msg","订单信息：id=1,time=2019年8月17日16:41:47");
+        //2.打印倒计时10秒
+        for (int i = 10; i > 0 ; i--) {
+            System.out.println(i+"...");
+            Thread.sleep(1000);
+        }
+    }
 }

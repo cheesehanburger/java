@@ -31,6 +31,8 @@ public class User {
     @Version
     private Integer version;
 
+    private Data time;
+
 }
 
 

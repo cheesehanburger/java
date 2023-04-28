@@ -13,12 +13,6 @@
         <module name="mybatisplus_03_dml" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="mybatisplus_01_quickstart" target="1.8" />
-      <module name="mybatisplus_02_dql" target="1.8" />
-      <module name="mybatisplus_03_dml" target="1.8" />
-      <module name="mybatisplus_04_generator" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

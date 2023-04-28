@@ -29,10 +29,10 @@ class Mybatisplus02DqlApplicationTests {
 
         //todo：按条件查询
         //方式一：按条件查询
-        //QueryWrapper wrapper = new QueryWrapper();
-        //wrapper.lt("age",18);
-        //List<User> users = userDao.selectList(wrapper);
-        //System.out.println(users);
+        QueryWrapper wrapper = new QueryWrapper();
+        wrapper.lt("age",18);
+        List<User> users = userDao.selectList(wrapper);
+        System.out.println(userDao.selectCount(wrapper));
 
         //方式二：Lambda格式的条件查询
         //QueryWrapper<User> wrapper = new QueryWrapper<User>();

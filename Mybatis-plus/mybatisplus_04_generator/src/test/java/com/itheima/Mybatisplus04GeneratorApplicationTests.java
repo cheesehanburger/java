@@ -16,5 +16,6 @@ class Mybatisplus04GeneratorApplicationTests {
     @Test
     public void test() {
         System.out.println(userService.getById(2));
+        userService.
     }
 }

@@ -1,10 +1,19 @@
 package com.itheima.domain;
 
-public class Book {
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class Book implements Serializable {
     private Integer id;
     private String type;
     private String name;
     private String description;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date date;
 
     @Override
     public String toString() {
@@ -13,6 +22,7 @@ public class Book {
                 ", type='" + type + '\'' +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
+                ", date='" + date + '\'' +
                 '}';
     }
 
@@ -46,5 +56,13 @@ public class Book {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate( Date date) {
+        this.date = date;
     }
 }

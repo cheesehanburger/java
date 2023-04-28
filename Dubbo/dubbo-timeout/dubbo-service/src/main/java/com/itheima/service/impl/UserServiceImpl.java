@@ -12,7 +12,7 @@ import org.apache.dubbo.config.annotation.Service;
 * retries 重试次数  （默认为2次，重试次数 + 1 = 总请求次数）
 * */
 //将这个类提供的方法（服务）对外发布。将访问的地址 ip，端口，路径注册到注册中心中
-@Service(timeout = 3000, retries = 2)  // 超时时间建议定义在服务端，用来断开线程，防止雪崩
+@Service(timeout = 3000, retries = 2)  // 超时时间建议定义在服务端，用来断开线程，防止雪崩，当前服务3s超时，重试两次，总共三次
 
 public class UserServiceImpl implements UserService {
 

@@ -19,15 +19,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="123" target="1.8" />
-      <module name="springboot_01_quickstart" target="1.8" />
-      <module name="springboot_02_base_config" target="1.8" />
-      <module name="springboot_03_read_data" target="1.8" />
-      <module name="springboot_04_profile" target="1.8" />
-      <module name="springboot_05_maven_and_boot_profile" target="1.8" />
-      <module name="springboot_06_config_file" target="1.8" />
-      <module name="springboot_07_test" target="1.8" />
-      <module name="springboot_08_mybatis" target="1.8" />
-      <module name="springboot_09_ssm" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -21,7 +21,7 @@ class Mybatisplus03DqlApplicationTests {
     public void TestAdd() {
         User user = new User();
         //user.setId(10L);
-        user.setName("黑马程序员");
+        user.setName("黑马");
         user.setPassword("itheima");
         user.setAge(12);
         user.setTel("4006184000");
@@ -72,6 +72,16 @@ class Mybatisplus03DqlApplicationTests {
 
         userDao.updateById(user1);
         userDao.updateById(user2);
+
+    }
+
+    @Test
+    public void TestPage() {
+        Page<User> page = new Page<>(4,10);
+        page = userDao.selectPage(page,null);
+        System.out.println("总页数："+ page.getTotal());
+        System.out.println(page.getCurrent());
+        System.out.println(page.getRecords().size());
 
     }
 }

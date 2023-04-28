@@ -19,7 +19,7 @@
     <!--2.使用resultMap（推荐）-->
     <!--id：唯一的标识
     type：映射的类型，支持别名-->
-    <resultMap id="brandResultMap" type="brand">
+    <resultMap id="brandResultMap" type="com.itheima.pojo.Brand">
         <!--id标签：完成主键字段的映射
         result标签：完成一般字段的映射-->
         <result column="brand_name" property="brandName" />
