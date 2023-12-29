@@ -10,10 +10,6 @@
         <module name="mq-producer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="mq-consumer" target="1.8" />
-      <module name="mq-producer" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

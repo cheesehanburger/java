@@ -9,7 +9,7 @@
     id="brand_column">-->
     <!--    id,brand_name as brandName,company_name as companyName,ordered,description,status-->
     <!--</sql>-->
-    
+
     <!-- <select id="selectAll" resultType="brand"> 
         select 
         <include refid="brand_column" /> 
@@ -22,13 +22,15 @@
     <resultMap id="brandResultMap" type="com.itheima.pojo.Brand">
         <!--id标签：完成主键字段的映射
         result标签：完成一般字段的映射-->
-        <result column="brand_name" property="brandName" />
-        <result column="company_name" property="companyName" />
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
     </resultMap>
 
 
     <!--使用resultMap，这里的属性也需要更改为resultMap-->
-    <select id="selectAll" resultMap="brandResultMap"> select * from tb_brand; </select>
+    <select id="selectAll" resultMap="brandResultMap">
+        select * from tb_brand;
+    </select>
 
     <!--parameterType指定参数类型，可以省略 -->
     <!--特殊字符的处理：1
@@ -41,7 +43,8 @@
         <!--${}是直接拼接sql，会有sql注入的问题-->
         <!--使用时机：参数传递的时候使用#{}
         表名或者列名不固定的时候使用${} --> select * from tb_brand
-        where id = #{id}; </select>
+        where id = #{id};
+    </select>
 
     <!--多条件查询-->
     <!--<select
@@ -54,27 +57,33 @@
 
     <!--使用动态条件查询-->
     <!--问题：会出现and问题-->
-    <select id="selectByCondition" resultMap="brandResultMap"> select * from tb_brand <!--解决方式1：1=1为缓冲式，无实际意义，但是可以防止后面的and问题-->
+    <select id="selectByCondition" resultMap="brandResultMap">
+        select * from tb_brand <!--解决方式1：1=1为缓冲式，无实际意义，但是可以防止后面的and问题-->
         <!--where
         1 = 1-->
         <!--解决方式二（推荐）：使用where标签代替关键字，他会动态的去除第一个条件前的and-->
         <where>
-            <if test="status != null"> and status = #{status} </if>
+            <if test="status != null">and status = #{status}</if>
             <if
-                test="companyName != null and companyName != '' "> and company_name like
-        #{companyName} </if>
-            <if test="brandName != null and brandName != '' "> and brand_name like
-        #{brandName}; </if>
+                    test="companyName != null and companyName != '' ">and company_name like
+                #{companyName}
+            </if>
+            <if test="brandName != null and brandName != '' ">and brand_name like
+                #{brandName};
+            </if>
         </where>
     </select>
 
     <!-- 单条件的动态查询-->
-    <select id="selectByConditionSingle" resultMap="brandResultMap"> select * from tb_brand <where>
+    <select id="selectByConditionSingle" resultMap="brandResultMap">
+        select * from tb_brand
+        <where>
             <choose><!--相当于switch-->
-                <when test="status != null"><!--相当于case--> status = #{status} </when>
+                <when test="status != null"><!--相当于case--> status = #{status}</when>
                 <when test="companyName != null and companyName != '' "><!--相当于case--> company_name like
-        #{companyName} </when>
-                <when test="brandName != null and brandName != ''"><!--相当于case--> brand_name like #{brandName} </when>
+                    #{companyName}
+                </when>
+                <when test="brandName != null and brandName != ''"><!--相当于case--> brand_name like #{brandName}</when>
             </choose>
         </where>
     </select>
@@ -82,26 +91,37 @@
     <!--插入语句-->
     <!--useGeneratedKeys开启主键返回，
     keyProperty设置返回的主键是哪个属性-->
-    <insert id="add" useGeneratedKeys="true" keyProperty="id"> insert into tb_brand
-        (brand_name,company_name,ordered,description,status) values
-        (#{brandName},#{companyName},#{ordered},#{description},#{status}) </insert>
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_brand (brand_name,company_name,ordered,description,status)
+        values (#{brandName},#{companyName},#{ordered},#{description},#{status})
+    </insert>
 
     <!--    修改语句-->
-    <update id="update"> update tb_brand <set>
-            <if test="brandName != null and brandName != ''"> brand_name = #{brandName}, </if>
-            <if
-                test="companyName != null and companyName != ''"> company_name = #{companyName}, </if>
-            <if
-                test="ordered != null"> ordered = #{ordered}, </if>
-            <if
-                test="description != null and description != ''"> description = #{description}, </if>
-            <if
-                test="status != null"> status = #{status} </if>
-        </set> where id = #{id}; </update>
+    <update id="update">update tb_brand
+        <set>
+            <if test="brandName != null and brandName != ''">
+                brand_name = #{brandName},
+            </if>
+            <if test="companyName != null and companyName != ''">
+                company_name = #{companyName},
+            </if>
+            <if test="ordered != null">
+                ordered = #{ordered},
+            </if>
+            <if test="description != null and description != ''">
+                description = #{description},
+            </if>
+            <if test="status != null">
+                status = #{status}
+            </if>
+        </set>
+        where id = #{id};
+    </update>
 
     <!--删除语句-->
     <!--单个删除-->
-    <delete id="deleteById"> delete from tb_brand <where> id = #{id}; </where>
+    <delete id="deleteById">delete from tb_brand
+        <where>id = #{id};</where>
     </delete>
 
     <!--    批量删除-->
@@ -109,11 +129,12 @@
     会将数组参数封装为一个Map集合：
         默认：array 为参数数组的 key值  即 array = 数组
         使用@Param注解改变map集合的默认key的名称-->
-    <delete id="deleteByIds"> delete from tb_brand where id in <!--separator
+    <delete id="deleteByIds">delete from tb_brand where id in <!--separator
         属性：集合项迭代之间的分隔符。 foreach 标签不会错误地添加多余的分隔符。也就是最后一次迭代不会加分隔符。
         open 属性：该属性值是在拼接SQL语句之前拼接的语句，只会拼接一次
         close 属性：该属性值是在拼接SQL语句拼接后拼接的语句，只会拼接一次-->
         <foreach collection="ids" item="id"
-            separator="," open="(" close=")"> #{id} </foreach>
+                 separator="," open="(" close=")">#{id}
+        </foreach>
     </delete>
 </mapper>
